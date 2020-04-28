@@ -17,19 +17,29 @@ body .container {
   padding: 0;
 }
 
-body .container .logo-first {
+body .container .logo {
+  padding: 40px;
+}
+
+body .container .logo .logo-first {
   padding: 0px;
   margin: 0px;
   font-weight: 900;
 }
 
-body .container .logo-second {
+body .container .logo .logo-second {
   padding: 0px;
   margin: 0px;
   font-weight: 400;
 }
 
-body .container .description {
+body .container .container-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .container-carousel .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,22 +47,109 @@ body .container .description {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 40%;
+  margin-left: 15%;
 }
 
-body .container .description h1 {
+body .container .container-carousel .description h1 {
   padding: 0px;
   margin: 0px;
   font-size: 7em;
 }
 
-body .container .description button {
-  width: 30%;
-  border: none;
+body .container .container-carousel .description p {
+  border-top: 2px solid #6a3cbc;
+  padding-top: 20px;
+  width: 50%;
   font-size: 1.2em;
+}
+
+body .container .container-carousel .description button {
+  position: relative;
+  width: 220px;
+  height: 50px;
+  border: none;
+  font-size: 1.1em;
   color: white;
   border-radius: 30px;
-  background-color: #461b93;
+  background-color: #6a3cbc;
   padding: 0.5em;
+}
+
+body .container .container-carousel .description button span {
+  display: inline-block;
+  vertical-align: middle;
+  content: url(../img/right-arrow.svg);
+  color: white;
+  margin-left: 0.3em;
+  width: 1em;
+  height: 1em;
+}
+
+body .container .container-carousel .carousel-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .container-carousel .carousel-projects .project1, body .container .container-carousel .carousel-projects .project2 {
+  height: 70vh;
+  width: 250px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 24px -1px black;
+          box-shadow: 0px 0px 24px -1px black;
+}
+
+body .container .container-carousel .carousel-projects .project1 {
+  background-image: url(../img/mockupalma-bialetlo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+  margin-right: 20px;
+  position: relative;
+}
+
+body .container .container-carousel .carousel-projects .project1 .inner-box {
+  background: #461b93;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  opacity: 0.6;
+}
+
+body .container .container-carousel .carousel-projects .project1 h1 {
+  color: white;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+body .container .container-carousel .carousel-projects .project2 {
+  background-image: url(../img/ulotka-choice-shutters.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+  position: relative;
+}
+
+body .container .container-carousel .carousel-projects .project2 .inner-box {
+  background: #461b93;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  opacity: 0.6;
+}
+
+body .container .container-carousel .carousel-projects .project2 h1 {
+  color: white;
+  font-size: 2.5em;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.css.map */
