@@ -23,6 +23,19 @@ body {
         height: 100vh;
         padding: 0;
 
+
+        .logo-first{
+            padding: 0px;
+            margin: 0px;
+            font-weight: 900;
+        }
+
+        .logo-second {
+            padding: 0px;
+            margin: 0px;
+            font-weight: 400;
+        }
+
         .description {
             display: flex;
             flex-direction: column;

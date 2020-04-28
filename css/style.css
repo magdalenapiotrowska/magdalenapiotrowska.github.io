@@ -17,6 +17,18 @@ body .container {
   padding: 0;
 }
 
+body .container .logo-first {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 900;
+}
+
+body .container .logo-second {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
+}
+
 body .container .description {
   display: -webkit-box;
   display: -ms-flexbox;
