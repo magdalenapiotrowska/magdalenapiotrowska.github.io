@@ -1,77 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
 body {
-    padding: 30px 30px 30px 30px !important;  
-    font-family: 'Alegreya Sans', sans-serif;
-    background-image: url(/img/background.svg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
-    background-position-x: 117%;
-    height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
 }
 
-.logo-first {
-    font-size: 23px;
-    letter-spacing: 50;
-    font-weight: 900;
+body .container {
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(33%, white), color-stop(33%, #6a3cbc), to(#6a3cbc));
+  background: linear-gradient(to right, white 0%, white 33%, #6a3cbc 33%, #6a3cbc 100%);
+  height: 100vh;
+  padding: 0;
 }
 
-.logo-second {
-    font-size: 18px;
-    letter-spacing: 50;
-    font-weight: 300;
-    margin-top: -5px;
+body .container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
 }
 
-h1 {
-    font-size: 40px;
-    letter-spacing: 50;
-    font-weight: 900;
+body .container .description h1 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 7em;
 }
 
-h2 {
-    font-size: 40px;
-    letter-spacing: 50;
-    font-weight: 300;
-    
+body .container .description button {
+  width: 30%;
+  border: none;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 30px;
+  background-color: #461b93;
+  padding: 0.5em;
 }
-
-.title {
-    margin-top: -5.4%
-}
-
-p {
-    font-size: 17px;
-    letter-spacing: 50;
-    font-weight: 400;
-    padding: 0 !important;
-    margin-top: -10px;
-    margin-bottom: 0px;
-}
-.img-dots {
-    position: absolute; 
-    z-index: -2;
-    margin-left: -30px; 
-    margin-top: 30px;
-}
-
-
-.left-menu {
-    display: flex;
-    margin-bottom: 40px;
-}
-.number-box {
-    display:inline-block;
-    padding-right: 20px;
-}
-.menu-title {
-    display:inline-block;
-}
-
-.left-menu-container {
-    margin-top: 15%;
-    margin-left: 5%;
-    
-}
-.row-menu {
-    border-right: 1px solid pink;
-}
+/*# sourceMappingURL=style.css.map */
