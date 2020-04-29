@@ -5,45 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
-    <section class="container">
-    <header>
-        <div class="logo">
-            <p class="logo-first">
-                PORTFOLIO
-            </p>
-            <p class="logo-second">
-                MAGDALENA PIOTROWSKA
-            </p>
-        </div>
-    </header>
-    <section class="container-carousel">
-        <div class="description">
-            <h1>Moje</h1>
-            <h1>Projekty</h1>
-            <p>Zajmuje się wykonywaniem stron internetowych oraz projektów graficznych.</p>
-            <button>Zobacz wszystkie<span></span></button>
-        </div>
-        <div class="carousel-projects">
-            <div class="project1">
-                <div class="inner-box">
-                    <h1>#graphics</h1>
-                    <h1>#photoshop</h1>
-                    <h1>#illustrator</h1>
-                    <h1>#</h1>
+  <body onload="loader()">
+    <div id="loader" class="loader-section">
+        <h1>Magdalena Piotrowska</h1>
+        <h4>PORTFOLIO</h4>
+    </div>
+    <section class="container" id="main">
+        <header>
+            <div class="logo">
+                <p class="logo-first">
+                    PORTFOLIO
+                </p>
+                <p class="logo-second">
+                    MAGDALENA PIOTROWSKA
+                </p>
+            </div>
+        </header>
+        <section class="container-carousel">
+            <div class="description">
+                <h1>Moje</h1>
+                <h1>Projekty</h1>
+                <p>Zajmuje się wykonywaniem stron internetowych oraz projektów graficznych.</p>
+                <button>Zobacz wszystkie<span></span></button>
+            </div>
+            <div class="carousel-projects">
+                <div class="project1">
+                    <div class="inner-box">
+                        <h1>#graphics</h1>
+                        <div class=line></div>
+                        <p>Ulotki, wizytówki, plakaty, broszury, banery, materiały reklamowe</p>
+                    </div>
+                </div>
+                <div class="project2">
+                    <div class="inner-box">
+                        <h1>#websites</h1>
+                        <div class=line></div>
+                        <p>Strony internetowe oparte o system zarządzania treścią lub HTML,CSS,JavaScript</p>
+                    </div>
                 </div>
             </div>
-            <div class="project2">
-                <div class="inner-box">
-                    <h1>#websites</h1>
-                    <h1>#HTML,CSS</h1>
-                    <h1>#JavaScript</h1>
-                    <h1>#Bootstrap</h1>
-                </div>
-            </div>
-        </div>
+        </section>
     </section>
     <!-- Graphic Projects Page -->
 
@@ -51,6 +55,35 @@
 
     
     <!-- Footer -->
+
+    <script type="text/javascript">
+
+      
+
+        (function() {
+        //I get the element
+        var divElem=document.getElementById('main');
+        //I set css display to none so it is not become visible
+        divElem.style.display='none';
+        //Via if condition I check the readystate status
+        if (document.readyState === 'loading') {
+        //If loading I set the following function to trigger when it becomes complete
+        document.onreadystatechange=function(){
+            if (document.readyState === 'complete') {
+        //When it becomes complete the it triggers the setTimeout function (time set=3000ms)
+            setTimeout(function(){
+        //After the time is passed then I change the css display to block that appears the elements
+            divElem.style.display='block';   
+            var hideLoader =document.getElementById('loader');   
+            hideLoader.style.display='none';   
+                    
+            }, 5000);
+            }
+            };
+        }    
+            
+        })();
+    </script>
 
   </body>
 </html>
