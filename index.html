@@ -6,49 +6,55 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
   </head>
-  <body onload="loader()">
+  <body>
     <div id="loader" class="loader-section">
         <h1>Magdalena Piotrowska</h1>
         <h4>PORTFOLIO</h4>
     </div>
-    <section class="container" id="main">
-        <header>
-            <div class="logo">
-                <p class="logo-first">
-                    PORTFOLIO
-                </p>
-                <p class="logo-second">
-                    MAGDALENA PIOTROWSKA
-                </p>
-            </div>
-        </header>
-        <section class="container-carousel">
-            <div class="description">
-                <h1>Moje</h1>
-                <h1>Projekty</h1>
-                <p>Zajmuje się wykonywaniem stron internetowych oraz projektów graficznych.</p>
-                <button>Zobacz wszystkie<span></span></button>
-            </div>
-            <div class="carousel-projects">
-                <div class="project1">
-                    <div class="inner-box">
-                        <h1>#graphics</h1>
-                        <div class=line></div>
-                        <p>Ulotki, wizytówki, plakaty, broszury, banery, materiały reklamowe</p>
+
+    <div id="all">
+        <section class="container" id="main">
+            <header>
+                <div class="logo">
+                    <p class="logo-first">
+                        PORTFOLIO
+                    </p>
+                    <p class="logo-second">
+                        MAGDALENA PIOTROWSKA
+                    </p>
+                </div>
+            </header>
+            <section class="container-carousel">
+                <div class="description">
+                    <h1>Moje</h1>
+                    <h1>Projekty</h1>
+                    <p>Zajmuje się wykonywaniem stron internetowych oraz projektów graficznych.</p>
+                    <button>Pobierz CV</button>
+                </div>
+                <div class="carousel-projects">
+                    <a href="graphics.html">
+                        <div class="project1">
+                            <div class="inner-box">
+                                <h1>#graphics</h1>
+                                <div class=line></div>
+                                <p>Ulotki, wizytówki, plakaty, broszury, banery, materiały reklamowe</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="project2">
+                        <div class="inner-box">
+                            <h1>#websites</h1>
+                            <div class=line></div>
+                            <p>Strony internetowe oparte o system zarządzania treścią lub HTML,CSS,JavaScript</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project2">
-                    <div class="inner-box">
-                        <h1>#websites</h1>
-                        <div class=line></div>
-                        <p>Strony internetowe oparte o system zarządzania treścią lub HTML,CSS,JavaScript</p>
-                    </div>
-                </div>
-            </div>
+            </section>
         </section>
-    </section>
+    </div>
+   
     <!-- Graphic Projects Page -->
 
     <!-- Websites -->
@@ -62,7 +68,7 @@
 
         (function() {
         //I get the element
-        var divElem=document.getElementById('main');
+        var divElem=document.getElementById('all');
         //I set css display to none so it is not become visible
         divElem.style.display='none';
         //Via if condition I check the readystate status
@@ -77,7 +83,7 @@
             var hideLoader =document.getElementById('loader');   
             hideLoader.style.display='none';   
                     
-            }, 5000);
+            }, 3000);
             }
             };
         }    
