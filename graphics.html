@@ -6,12 +6,48 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
-    <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
-    <script type="module" src="./lazyloading.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script>
+    const preload = document.querySelector('.preload');
+
+    preload.classList.add('show-preloader');
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            preload.classList.remove('show-preloader');
+        }, 2000);
+    });
+        </script>-->
   </head>
   <body>
+<!--
+    <div class="preload">
+        <div class="circles-group">
+           <div class="circle"></div>
+           <div class="circle"></div>
+           <div class="circle"></div>
+           <div class="circle"></div>
+        </div>
+      </div>
+    -->
+    
     <section class="graphics">
+        <a href="index.html">
+            <div class="back-arrow">
+                <img src="/img/left-arrow.png">
+            </div>
+        </a>
         <h1>#graphics</h1>
+        <div class="skills">
+            <div class="skill">
+                <h2>Photoshop</h2>
+            </div>
+            <div class="skill">
+                <h2>Illustrator</h2>
+            </div>
+            <div class="skill">
+                <h2>Lightroom</h2>
+            </div>
+        </div>
         <div class="images">
             <div class="container-img">
                 <img src="img/funjump-urodziny/mockupfunjump-urodziny.svg">
