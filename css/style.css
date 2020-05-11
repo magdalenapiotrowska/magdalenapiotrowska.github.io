@@ -10,59 +10,6 @@ body {
           box-sizing: border-box;
   font-size: 16px;
   /* GRAPHICS
-
-    .preload {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 10000;
-        visibility: hidden;
-        opacity: 0;
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        background-color: #10131a;
-        transition: opacity 400ms ease-in-out, visibility 0s 400ms;
-    }
-    
-    .show-preloader {
-        visibility: visible;
-        opacity: 1;
-    }
-    
-    .circle {
-        background-color: #f9dc97;
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        display: inline-block;
-        animation: bounce-circles 0.7s infinite ease-in-out;
-    }
-    
-    .preload .circle:nth-child(1) {
-         animation-delay: -0.6s;
-    }
-    
-    .preload .circle:nth-child(2) {
-         animation-delay: -0.5s;
-    }
-    
-    .preload .circle:nth-child(3) {
-         animation-delay: -0.4s;
-    }
-    
-    .preload .circle:nth-child(4) {
-        animation-delay: -0.3s;
-    }
-    
-    @keyframes bounce-circles {
-        0%, 40%, 100% {
-             transform: translateY(-10px);
-        } 20% {
-             transform: translateY(-20px);
-        }
-    }
     */
 }
 
@@ -630,6 +577,141 @@ body .graphics .images .container-img .modalDialog .modal-content .close:hover {
 }
 
 body .graphics .images .container-img .modalDialog .modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .graphics .images .container-img-fb {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  body .graphics .images .container-img-fb {
+    width: 100%;
+  }
+}
+
+body .graphics .images .container-img-fb img {
+  width: 60%;
+}
+
+body .graphics .images .container-img-fb .middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+body .graphics .images .container-img-fb .middle button {
+  width: 220px;
+  height: 200px;
+  border: none;
+  font-size: 1em;
+  font-weight: 900;
+  color: white;
+  border-radius: 30px;
+  font-family: 'Lato', sans-serif;
+  background-color: transparent;
+  background-image: url(/img/brush-watercolor3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.2em;
+  cursor: pointer;
+}
+
+body .graphics .images .container-img-fb .middle button:focus {
+  outline: none;
+}
+
+body .graphics .images .container-img-fb:hover .middle {
+  opacity: 2;
+}
+
+body .graphics .images .container-img-fb .modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+body .graphics .images .container-img-fb .modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body .graphics .images .container-img-fb .modalDialog .modal-content {
+  height: 100vh;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  body .graphics .images .container-img-fb .modalDialog .modal-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+  }
+}
+
+body .graphics .images .container-img-fb .modalDialog .modal-content img {
+  -webkit-box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 768px) {
+  body .graphics .images .container-img-fb .modalDialog .modal-content img {
+    width: auto;
+    height: 100%;
+    max-width: 70%;
+    max-height: 50vh;
+  }
+}
+
+body .graphics .images .container-img-fb .modalDialog .modal-content .close {
+  color: black;
+  line-height: 25px;
+  font-size: 1.5em;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 20px;
+  width: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body .graphics .images .container-img-fb .modalDialog .modal-content .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .graphics .images .container-img-fb .modalDialog .modal-content .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
