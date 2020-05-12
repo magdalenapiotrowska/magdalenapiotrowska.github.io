@@ -13,42 +13,34 @@ body {
     */
 }
 
-body .loader-section {
+body #loading {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #6a3cbc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  background-color: #fff;
+  z-index: 99;
+  text-align: center;
 }
 
-body .loader-section h1 {
-  font-size: 70px;
-  color: white;
-  -webkit-animation: rodar 2s infinite;
-  animation: rodar 2s infinite;
-  letter-spacing: 2px;
-  background-color: #6a3cbc;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  position: relative;
-}
-
-body .loader-section h4 {
-  font-size: 30px;
-  letter-spacing: 2px;
-  color: white;
-  margin-top: 0px;
+body #loading #loading-image {
+  position: absolute;
+  top: 100px;
+  left: 240px;
+  z-index: 100;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 body .container {
@@ -113,6 +105,7 @@ body .container .container-carousel .description {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 40px;
+  width: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -175,7 +168,7 @@ body .container .container-carousel .description p {
   width: 80%;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 @media screen and (max-width: 768px) {
@@ -186,7 +179,7 @@ body .container .container-carousel .description p {
 
 body .container .container-carousel .description button {
   position: relative;
-  width: 220px;
+  width: 200px;
   height: 50px;
   border: none;
   font-size: 1.1em;
@@ -194,6 +187,7 @@ body .container .container-carousel .description button {
   border-radius: 30px;
   background-color: #461b93;
   padding: 0.5em;
+  margin-right: 20px;
 }
 
 body .container .container-carousel .description button span {
@@ -234,7 +228,7 @@ body .container .container-carousel .carousel-projects {
 body .container .container-carousel .carousel-projects .project1, body .container .container-carousel .carousel-projects .project2 {
   height: 50vh;
   width: 100%;
-  background-image: url(/img/brush-watercolor2.png);
+  background-image: url(/img/brush-watercolor2.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -249,7 +243,7 @@ body .container .container-carousel .carousel-projects .project1, body .containe
 }
 
 body .container .container-carousel .carousel-projects .project1:hover, body .container .container-carousel .carousel-projects .project2:hover {
-  background-image: url(/img/brush-watercolor3.png);
+  background-image: url(/img/brush-watercolor3.webp);
 }
 
 body .container .container-carousel .carousel-projects .project1 .inner-box {
@@ -277,7 +271,7 @@ body .container .container-carousel .carousel-projects .project1 .inner-box {
 body .container .container-carousel .carousel-projects .project1 .inner-box h1 {
   margin-top: 0.5em;
   padding-bottom: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: white;
   text-shadow: 2px 2px black;
   font-size: 4.6em;
@@ -319,7 +313,7 @@ body .container .container-carousel .carousel-projects .project2 .inner-box {
 body .container .container-carousel .carousel-projects .project2 .inner-box h1 {
   margin-top: 0.5em;
   padding-bottom: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: white;
   text-shadow: 2px 2px black;
   font-size: 4.6em;
@@ -470,7 +464,7 @@ body .graphics .images .container-img .middle button {
   border-radius: 30px;
   font-family: 'Lato', sans-serif;
   background-color: transparent;
-  background-image: url(/img/brush-watercolor3.png);
+  background-image: url(/img/brush-watercolor3.webp);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -583,8 +577,8 @@ body .graphics .images .container-img .modalDialog .modal-content .close:focus {
 }
 
 body .graphics .images .container-img-fb {
-  width: 100%;
-  height: 400px;
+  width: 50%;
+  height: 100%;
   position: relative;
   text-align: center;
 }
@@ -596,7 +590,7 @@ body .graphics .images .container-img-fb {
 }
 
 body .graphics .images .container-img-fb img {
-  width: 60%;
+  width: 90%;
 }
 
 body .graphics .images .container-img-fb .middle {
@@ -923,36 +917,6 @@ body .websites .websites-container .container-web .img {
 @media screen and (max-width: 768px) {
   body .websites .websites-container .container-web .img {
     width: 50%;
-  }
-}
-
-@-webkit-keyframes rodar {
-  0% {
-    color: #461b93;
-    margin-bottom: -6%;
-  }
-  30% {
-    letter-spacing: 8px;
-    margin-bottom: -6%;
-  }
-  85% {
-    letter-spacing: 2px;
-    margin-bottom: -6%;
-  }
-}
-
-@keyframes rodar {
-  0% {
-    color: #461b93;
-    margin-bottom: -6%;
-  }
-  30% {
-    letter-spacing: 8px;
-    margin-bottom: -6%;
-  }
-  85% {
-    letter-spacing: 2px;
-    margin-bottom: -6%;
   }
 }
 

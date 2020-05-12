@@ -3,15 +3,6 @@ $color2: #461b93;
 $color3: #70acb1;
 $mobile-width: 768px;
 
-//MIXIN ANIMATION 
-@mixin animation-mixin($value){
-    -webkit-animation: $value 3s 1;
-    -moz-animation: $value 0.5 1;
-    -ms-animation: $value 0.5 1;
-     animation: $value 0.5 1;
- }
-
-
  //MIXIN ANIMATION 
 @mixin animation-mixin($bounce){
     -webkit-animation: $bounce 2s infinite;;
@@ -31,38 +22,33 @@ body {
     font-size: 16px;
 
 
-    .loader-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    #loading {
         width: 100%;
-        height: 100vh;
-        background-color: $color1;
-        
-        
-
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        background-color: #fff;
+        z-index: 99;
+        text-align: center;
+     
         h1 {
-            font-size: 70px;
-            color: white;
-            @include animation-mixin(rodar);
-            letter-spacing: 2px;
-            background-color: $color1;
-            margin-bottom: 0px;
-            margin-top: 0px;
-            position: relative;
-        }
 
-        h4 {
-            font-size: 30px;
-            letter-spacing: 2px;
-            color: white;
-            margin-top: 0px;
-          
-           
-            
+        }
+      
+        #loading-image {
+            position: absolute;
+            top: 100px;
+            left: 240px;
+            z-index: 100;
+            @include animation-mixin(bounce);
         }
     }
+
     .container {
         height: 100vh;
         padding: 0;
@@ -108,6 +94,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 margin-left: 40px;
+                width: 40%;
 
                 @media screen and (max-width: $mobile-width) {
                     width: 100%;
@@ -154,7 +141,7 @@ body {
                     width: 80%;
                     padding-top: 20px;
                     padding-bottom: 20px;
-                    font-size: 1.2em;
+                    font-size: 1.1em;
 
                     @media screen and (max-width: $mobile-width) {
                         text-align: center;
@@ -164,7 +151,7 @@ body {
 
                 button {
                     position: relative;
-                    width: 220px;
+                    width: 200px;
                     height: 50px;
                     border: none;
                     font-size: 1.1em;
@@ -172,6 +159,7 @@ body {
                     border-radius: 30px;
                     background-color: $color2;
                     padding: 0.5em;
+                    margin-right: 20px;
                     
                 span {
                     display: inline-block;
@@ -212,7 +200,7 @@ body {
                 .project1, .project2 {
                     height: 50vh;
                     width: 100%;
-                    background-image: url(/img/brush-watercolor2.png);
+                    background-image: url(/img/brush-watercolor2.webp);
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -223,7 +211,7 @@ body {
                         height: 70vh;
                     }
                     &:hover { 
-                        background-image: url(/img/brush-watercolor3.png);
+                        background-image: url(/img/brush-watercolor3.webp);
                        
                     }
                     
@@ -250,7 +238,7 @@ body {
                         h1 {
                             margin-top: 0.5em;
                             padding-bottom: 0px;
-                            margin-bottom: 10px;
+                            margin-bottom: 0px;
                             color: white;
                             text-shadow: 2px 2px black;
                             font-size: 4.6em;
@@ -286,7 +274,7 @@ body {
                         h1 {
                             margin-top: 0.5em;
                             padding-bottom: 0px;
-                            margin-bottom: 10px;
+                            margin-bottom: 0px;
                             color: white;
                             text-shadow: 2px 2px black;
                             font-size: 4.6em;
@@ -425,7 +413,7 @@ body {
                         border-radius: 30px;
                         font-family: 'Lato', sans-serif;
                         background-color: transparent;
-                        background-image: url(/img/brush-watercolor3.png);
+                        background-image: url(/img/brush-watercolor3.webp);
                         background-size: 100%;
                         background-repeat: no-repeat;
                         background-position: center;
@@ -538,8 +526,8 @@ body {
             }
 
             .container-img-fb {
-                width: 100%;
-                height: 400px;
+                width: 50%;
+                height: 100%;
                 position: relative;
                 text-align: center;
 
@@ -549,7 +537,7 @@ body {
 
                 
                 img {
-                    width:60%;
+                    width:90%;
                 }
 
                 .middle {
@@ -860,22 +848,6 @@ body {
     }
 
 
-    @keyframes rodar {
-        0% {
-          color: $color2;
-          margin-bottom: -6%;
-        }
-        30% {
-          letter-spacing: 8px;
-          margin-bottom: -6%;
-        }  
-        85% {
-          letter-spacing: 2px;
-          margin-bottom: -6%;
-        }
-        
-       
-      }
 
     @keyframes bounce {
         0%, 20%, 50%, 80%, 100% {
@@ -889,5 +861,5 @@ body {
         }
         }
       
-
+        
 }
