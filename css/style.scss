@@ -36,10 +36,7 @@ body {
         z-index: 99;
         text-align: center;
      
-        h1 {
-
-        }
-      
+    
         #loading-image {
             position: absolute;
             top: 100px;
@@ -68,12 +65,21 @@ body {
                     padding-top: 40px;
                     margin: 0px;
                     font-weight: 900;
+
+                    @media screen and (max-width: $mobile-width) {
+                        padding-left: 20px;
+                    }
+    
                 }
 
                 .logo-second {
                     padding-left: 40px;
                     margin: 0px;
                     font-weight: 400;
+
+                    @media screen and (max-width: $mobile-width) {
+                        padding-left: 20px;
+                    }
                 }
 
             }
@@ -101,6 +107,8 @@ body {
                     margin-top: 10%;
                     margin-left: 0;
                     align-items: center;
+                    justify-content: center;
+                    align-content: center;
                     
                 }
 
@@ -149,22 +157,45 @@ body {
 
                 }
 
-                button {
-                    position: relative;
-                    width: 200px;
-                    height: 50px;
-                    border: none;
-                    font-size: 1.1em;
-                    color: white;
-                    border-radius: 30px;
-                    background-color: $color2;
-                    padding: 0.5em;
-                    margin-right: 20px;
+                .buttons {
+                    display: flex;
+                    width: 100%;
 
-                    &:hover {
-                        cursor: pointer;
-                        background-color: $color1;
+                    @media screen and (max-width: $mobile-width) {
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
                     }
+                    
+
+                    a {
+                        text-decoration: none;
+                        text-align: center;
+                        width: 200px;
+                        font-size: 1.1em;
+                        color: white;
+                        border-radius: 30px;
+                        background-color: $color2;
+                        padding: 0.9em;
+                        margin-right: 20px;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: $color1;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        @media screen and (max-width: $mobile-width) {
+                            width: 30%;
+                            margin-right: 1%;
+                            padding: 1em;
+                        }
+
+                    }
+
             }
             
 
