@@ -1,4 +1,4 @@
-$color1: #6a3cbc; 
+$color1: #1b0044; 
 $color2: #461b93;
 $color3: #70acb1;
 $mobile-width: 768px;
@@ -160,20 +160,11 @@ body {
                     background-color: $color2;
                     padding: 0.5em;
                     margin-right: 20px;
-                    
-                span {
-                    display: inline-block;
-                    vertical-align: middle;
-                    content: url(../img/right-arrow.svg);
-                    color: white;
-                    margin-left: 0.3em;
-                    width: 1em;
-                    height: 1em;
-                
-                }
 
-
-                
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $color1;
+                    }
             }
             
 

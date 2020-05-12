@@ -190,14 +190,9 @@ body .container .container-carousel .description button {
   margin-right: 20px;
 }
 
-body .container .container-carousel .description button span {
-  display: inline-block;
-  vertical-align: middle;
-  content: url(../img/right-arrow.svg);
-  color: white;
-  margin-left: 0.3em;
-  width: 1em;
-  height: 1em;
+body .container .container-carousel .description button:hover {
+  cursor: pointer;
+  background-color: #1b0044;
 }
 
 body .container .container-carousel .carousel-projects {
@@ -893,7 +888,7 @@ body .websites .websites-container .container-web a .onlycoding:after {
   content: 'wdrożenie otrzymanego projektu graficznego';
   padding-top: 10px;
   display: block;
-  color: #6a3cbc;
+  color: #1b0044;
   font-size: 0.6em;
   position: absolute;
 }
@@ -902,7 +897,7 @@ body .websites .websites-container .container-web a h2:after {
   content: 'projekt graficzny i wdrożenie strony';
   padding-top: 10px;
   display: block;
-  color: #6a3cbc;
+  color: #1b0044;
   font-size: 0.6em;
   position: absolute;
 }
