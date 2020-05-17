@@ -59,7 +59,7 @@ body .container header {
   position: absolute;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body .container header {
     position: relative;
     padding-bottom: 40px;
@@ -77,7 +77,7 @@ body .container header .logo .logo-first {
   font-weight: 900;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body .container header .logo .logo-first {
     padding-left: 20px;
   }
@@ -89,7 +89,7 @@ body .container header .logo .logo-second {
   font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body .container header .logo .logo-second {
     padding-left: 20px;
   }
@@ -108,7 +108,7 @@ body .container .container-carousel {
   height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .container .container-carousel {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -127,10 +127,16 @@ body .container .container-carousel .description {
   width: 40%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  body .container .container-carousel .description {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   body .container .container-carousel .description {
     width: 100%;
-    margin-top: 10%;
+    margin-top: 25%;
     margin-left: 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -147,7 +153,7 @@ body .container .container-carousel .description .arrow {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .container .container-carousel .description .arrow {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -178,7 +184,7 @@ body .container .container-carousel .description h1 {
   font-size: 5em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .container .container-carousel .description h1 {
     text-align: center;
   }
@@ -195,7 +201,7 @@ body .container .container-carousel .description p {
   font-size: 1.1em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .container .container-carousel .description p {
     text-align: center;
   }
@@ -208,7 +214,7 @@ body .container .container-carousel .description .buttons {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .container .container-carousel .description .buttons {
     text-align: center;
     -webkit-box-pack: center;
@@ -242,7 +248,7 @@ body .container .container-carousel .description .buttons a:focus {
   outline: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .container .container-carousel .description .buttons a {
     width: 30%;
     margin-right: 1%;
@@ -262,14 +268,14 @@ body .container .container-carousel .carousel-projects {
   margin-left: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .container .container-carousel .carousel-projects {
     width: 100%;
     margin-left: 0px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body .container .container-carousel .carousel-projects a {
     width: 100%;
   }
@@ -285,7 +291,7 @@ body .container .container-carousel .carousel-projects .project1, body .containe
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body .container .container-carousel .carousel-projects .project1, body .container .container-carousel .carousel-projects .project2 {
     background-size: cover;
     height: 70vh;
@@ -406,7 +412,7 @@ body .graphics a .back-arrow img {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body .graphics a .back-arrow img {
     width: 10%;
   }
@@ -417,7 +423,7 @@ body .graphics h1 {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body .graphics h1 {
     margin-top: 50px;
   }
@@ -439,7 +445,7 @@ body .graphics .skills {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body .graphics .skills {
     margin-bottom: 0px;
   }
@@ -455,9 +461,16 @@ body .graphics .skills .skill {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body .graphics .skills .skill {
     width: 40%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .graphics .skills .skill {
+    width: 20%;
     margin-top: 10px;
   }
 }
@@ -482,15 +495,22 @@ body .graphics .images .container-img {
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body .graphics .images .container-img {
     width: 100%;
+    height: 50%;
   }
 }
 
 @media screen and (min-width: 1370px) {
   body .graphics .images .container-img {
     width: 25%;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  body .graphics .images .container-img {
+    width: 50%;
   }
 }
 
@@ -570,11 +590,12 @@ body .graphics .images .container-img .modalDialog .modal-content {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .graphics .images .container-img .modalDialog .modal-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 100%;
+    overflow: auto;
   }
 }
 
@@ -586,7 +607,7 @@ body .graphics .images .container-img .modalDialog .modal-content img {
           box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.75);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1370px) {
   body .graphics .images .container-img .modalDialog .modal-content img {
     width: auto;
     height: 100%;
@@ -599,7 +620,15 @@ body .graphics .images .container-img .modalDialog .modal-content img:nth-child(
   margin-right: 100px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  body .graphics .images .container-img .modalDialog .modal-content img:nth-child(2) {
+    margin-right: 0px;
+    margin-top: 20%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   body .graphics .images .container-img .modalDialog .modal-content img:nth-child(2) {
     margin-right: 0px;
     margin-top: 20%;
@@ -636,36 +665,42 @@ body .graphics .images .separator {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body .graphics .images .separator {
     display: none;
   }
 }
 
-body .graphics .images .container-img-fb {
+body .graphics .images .container-img-poster {
   width: 50%;
   height: 100%;
   position: relative;
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  body .graphics .images .container-img-fb {
+@media screen and (max-width: 480px) {
+  body .graphics .images .container-img-poster {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body .graphics .images .container-img-poster {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1370px) {
-  body .graphics .images .container-img-fb {
+  body .graphics .images .container-img-poster {
     width: 25%;
   }
 }
 
-body .graphics .images .container-img-fb img {
+body .graphics .images .container-img-poster img {
   width: 90%;
 }
 
-body .graphics .images .container-img-fb .middle {
+body .graphics .images .container-img-poster .middle {
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -675,7 +710,7 @@ body .graphics .images .container-img-fb .middle {
   -ms-transform: translate(-50%, -50%);
 }
 
-body .graphics .images .container-img-fb .middle button {
+body .graphics .images .container-img-poster .middle button {
   width: 220px;
   height: 200px;
   border: none;
@@ -693,15 +728,15 @@ body .graphics .images .container-img-fb .middle button {
   cursor: pointer;
 }
 
-body .graphics .images .container-img-fb .middle button:focus {
+body .graphics .images .container-img-poster .middle button:focus {
   outline: none;
 }
 
-body .graphics .images .container-img-fb:hover .middle {
+body .graphics .images .container-img-poster:hover .middle {
   opacity: 2;
 }
 
-body .graphics .images .container-img-fb .modalDialog {
+body .graphics .images .container-img-poster .modalDialog {
   position: fixed;
   top: 0;
   right: 0;
@@ -717,12 +752,12 @@ body .graphics .images .container-img-fb .modalDialog {
   height: 100%;
 }
 
-body .graphics .images .container-img-fb .modalDialog:target {
+body .graphics .images .container-img-poster .modalDialog:target {
   opacity: 1;
   pointer-events: auto;
 }
 
-body .graphics .images .container-img-fb .modalDialog .modal-content {
+body .graphics .images .container-img-poster .modalDialog .modal-content {
   height: 100vh;
   background: #fff;
   display: -webkit-box;
@@ -736,21 +771,34 @@ body .graphics .images .container-img-fb .modalDialog .modal-content {
           align-items: center;
 }
 
-@media screen and (max-width: 768px) {
-  body .graphics .images .container-img-fb .modalDialog .modal-content {
+@media screen and (max-width: 480px) {
+  body .graphics .images .container-img-poster .modalDialog .modal-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 100%;
+    overflow: auto;
   }
 }
 
-body .graphics .images .container-img-fb .modalDialog .modal-content img {
+@media screen and (max-width: 767px) {
+  body .graphics .images .container-img-poster .modalDialog .modal-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+body .graphics .images .container-img-poster .modalDialog .modal-content img {
+  width: auto;
+  height: 100%;
+  max-height: 90vh;
   -webkit-box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 21px -2px rgba(0, 0, 0, 0.75);
 }
 
-@media screen and (max-width: 768px) {
-  body .graphics .images .container-img-fb .modalDialog .modal-content img {
+@media screen and (max-width: 480px) {
+  body .graphics .images .container-img-poster .modalDialog .modal-content img {
     width: auto;
     height: 100%;
     max-width: 70%;
@@ -758,7 +806,16 @@ body .graphics .images .container-img-fb .modalDialog .modal-content img {
   }
 }
 
-body .graphics .images .container-img-fb .modalDialog .modal-content .close {
+@media screen and (max-width: 767px) {
+  body .graphics .images .container-img-poster .modalDialog .modal-content img {
+    width: auto;
+    height: 100%;
+    max-width: 70%;
+    max-height: 20vh;
+  }
+}
+
+body .graphics .images .container-img-poster .modalDialog .modal-content .close {
   color: black;
   line-height: 25px;
   font-size: 1.5em;
@@ -771,13 +828,13 @@ body .graphics .images .container-img-fb .modalDialog .modal-content .close {
   font-weight: bold;
 }
 
-body .graphics .images .container-img-fb .modalDialog .modal-content .close:hover {
+body .graphics .images .container-img-poster .modalDialog .modal-content .close:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
-body .graphics .images .container-img-fb .modalDialog .modal-content .close:focus {
+body .graphics .images .container-img-poster .modalDialog .modal-content .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -809,7 +866,7 @@ body .websites a .back-arrow img {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites a .back-arrow img {
     width: 10%;
   }
@@ -820,7 +877,7 @@ body .websites h1 {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites h1 {
     margin-top: 50px;
   }
@@ -842,7 +899,7 @@ body .websites .skills {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites .skills {
     margin-bottom: 0px;
   }
@@ -858,7 +915,7 @@ body .websites .skills .skill {
   color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites .skills .skill {
     width: 40%;
     margin-top: 10px;
@@ -879,7 +936,7 @@ body .websites .websites-container {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites .websites-container {
     margin-bottom: 20%;
   }
@@ -904,10 +961,18 @@ body .websites .websites-container .container-web {
   padding-right: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body .websites .websites-container .container-web {
     margin-bottom: 10%;
     padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .websites .websites-container .container-web {
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
 }
 
@@ -924,13 +989,13 @@ body .websites .websites-container .container-web .number {
   width: 25%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites .websites-container .container-web .number {
     width: 10%;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites .websites-container .container-web .number svg {
     display: none;
   }
@@ -941,9 +1006,16 @@ body .websites .websites-container .container-web .number h1 {
   padding: 40px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body .websites .websites-container .container-web .number h1 {
     width: 50%;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  body .websites .websites-container .container-web .number h1 {
+    width: 100%;
     padding-left: 20px;
   }
 }
@@ -954,13 +1026,20 @@ body .websites .websites-container .container-web p {
   text-align: right;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body .websites .websites-container .container-web p {
     width: 100%;
     margin-top: -10%;
     margin-left: 30px;
     text-align: left;
     padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  body .websites .websites-container .container-web p {
+    padding-right: 0px;
+    text-align: left;
   }
 }
 
@@ -973,7 +1052,7 @@ body .websites .websites-container .container-web .link {
   color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites .websites-container .container-web .link {
     font-size: 0.9em;
     margin-left: -10%;
@@ -1004,7 +1083,7 @@ body .websites .websites-container .container-web img {
           flex: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   body .websites .websites-container .container-web img {
     display: none;
     width: 50%;
