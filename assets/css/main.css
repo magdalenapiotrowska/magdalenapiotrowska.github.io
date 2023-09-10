@@ -2824,7 +2824,7 @@ input, select, textarea {
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
 					padding: 1em 0 0 0;
-					text-align: center;
+					text-align: left;
 					width: 100%;
 				}
 
@@ -3064,7 +3064,7 @@ input, select, textarea {
 		-webkit-flex-direction: row;
 		-ms-flex-direction: row;
 		flex-direction: row;
-		min-height: 22.5em;
+	
 	}
 
 		body.is-ie .spotlights > section {
