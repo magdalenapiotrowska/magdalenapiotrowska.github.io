@@ -3546,9 +3546,21 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+			a h2 {
+				margin-top: 0.5rem;
+			}
+
+			h1.major {
+				margin: 1.3em 0 1.3em 0;
+			}
+			.wrapper > .inner-box {
+				padding: 1em;
+			}
+			
+
 			#header {
 				display: block;
-				padding: 0 2em;
+				padding: 2em 2em;
 				text-align: left;
 			}
 
@@ -3560,15 +3572,20 @@ input, select, textarea {
 				#header > nav {
 					border-top: solid 1px rgba(255, 255, 255, 0.15);
 					text-align: inherit;
+					padding-bottom: 30px;
+					
 				}
 
 					#header > nav > ul > li {
-						margin-left: 1.5em;
+						margin-left: 0em;
+						width: 100%;
 					}
 
 						#header > nav > ul > li a {
-							height: 6em;
+							
+							height: 2em;
 							line-height: 6em;
+							border-right: none !important;
 						}
 
 		}
