@@ -3556,7 +3556,9 @@ input, select, textarea {
 			.wrapper > .inner-box {
 				padding: 1em;
 			}
-			
+			.modal-dialog {
+				max-width: 100vw !important;
+			}
 
 			#header {
 				display: block;
